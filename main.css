@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  ---color-red: #FE5252;
+  ---colro-blue: #5552FE;
+  ---font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(---font);
+  margin-top: 70px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.input {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid gray;
+}
+
+.label {
+  display: flex;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.input::placeholder {
+  font-size: 13px;
+  color: rgb(177, 177, 177);
+}
+
+.button {
+  width: 300px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: var(---colro-blue);
+  color: white;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.next-box {
+  width: 300px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #42CF36;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.name-box {
+  margin-bottom: 40px;
+}
+
+.password-box {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 420px) {
+  body {
+    margin-top: 100px;
+  }
+
+  .input {
+    width: 350px;
+  }
+
+  .button {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .password-box {
+    margin-bottom: 35px;
+  }
+}

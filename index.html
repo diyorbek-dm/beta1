@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./main.css">
+   <title>Document</title>
+ </head>
+
+ <body>
+
+   <center>
+     <h1>Login</h1>
+   </center>
+
+   <div class="container">
+
+     <div class="name-box">
+       <label for="text" class="label">Name</label>
+       <input type="text" class="input" id="inputText" placeholder="Enter your name:">
+     </div>
+     <span id="text-error" class="error"></span>
+
+     <div class="password-box">
+       <label for="password" class="label">Password</label>
+       <input type="password" class="input" id="inputPassword" placeholder="Enter your password:">
+     </div>
+     <span id="password-error" class="error"></span>
+
+     <button class="button" id="button">Submit</button>
+
+     <form action="./percent.html" id="link" hidden>
+      <button class="next-box">Next ></button>
+     </form>
+   </div>
+
+   <script src="./middle.js"></script>
+ </body>
+
+ </html>
